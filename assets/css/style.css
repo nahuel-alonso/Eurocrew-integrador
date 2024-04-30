@@ -760,6 +760,7 @@ button:hover {
   }
 
   .bg-sponsors {
+    max-width: 100%;
     width: 768px;
     height: 220px;
   }
@@ -885,6 +886,7 @@ button:hover {
   }
 
   .bg-sponsors {
+    max-width: 100%;
     width: 900px;
     height: 250px;
   }
@@ -1033,8 +1035,9 @@ button:hover {
   }
 
   .event-drift-img-container img {
+    max-width: 100%;
     width: 1200px;
-    height: 400px;
+    height: 100%;
   }
 
   .event-drift-info img {
