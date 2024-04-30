@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Inicia sesión - Eurocrew</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="shortcut icon"
@@ -18,6 +18,48 @@
     />
 </head>
 <body>
-    
+    <!-- Section 1 - Navbar -->
+    <header class="header" id="section-inicio">
+      <a href="./index.html"
+        ><img
+          src="./assets/img/navbar/eurocrew-navbar-logo.png"
+          alt="Eurocrew-logo"
+          class="img-eurocrew"
+      /></a>
+      <nav class="navbar">
+        <label for="toggle-menu">
+          <img src="./assets/img/navbar/menu.png" alt="menu" class="img-menu" />
+        </label>
+        <input type="checkbox" id="toggle-menu" />
+
+        <ul class="navbar-list">
+          <li><a href="./index.html" class="navbar-links">Inicio</a></li>
+          <li><a href="./login.html" class="sign-btn">Inicia sesión</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="container-login">
+        <div class="container-login-info">
+            <div class="login">
+                <h2>Inicia Sesión.</h2>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="username">Nombre de Usuario:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit">Entrar</button>
+                    <div class="register-title">
+                      <p>¿No tienes cuenta? <a href="./signup.html">Regístrate aquí.</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
 </body>
 </html>
