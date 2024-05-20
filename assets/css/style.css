@@ -68,7 +68,7 @@
 }
 
 .hero-video {
-  width: 100vw;
+  width: 100%;
 }
 
 .hero-title {
@@ -483,7 +483,7 @@ button {
   padding-top: 30px;
   height: 100vh;
   width: 100vw;
-  background-image: url('../img/galeria/bmw-blanco-m4.jpg');
+  background-image: url("../img/galeria/bmw-blanco-m4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -530,7 +530,6 @@ button:hover {
   background-color: #0056b3;
 }
 
-
 /* Seccion signup */
 .container-signup {
   display: flex;
@@ -538,50 +537,49 @@ button:hover {
   padding-top: 30px;
   height: 100vh;
   width: 100vw;
-  background-image: url('../img/galeria/toyota-motorland.jpg');
+  background-image: url("../img/galeria/toyota-motorland.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-
 /* MediaQueries */
+
 @media (max-width: 480px) {
- /* Navbar */
- .navbar-list {
-  background: rgb(37, 37, 37);
-  width: 100%;
-  height: calc(100vh - 65%);
-  position: absolute;
-  top: 65px;
-  left: 0;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  display: none;
-}
+  /* Navbar */
+  .navbar-list {
+    background: rgb(37, 37, 37);
+    width: 100%;
+    height: calc(100vh - 65%);
+    position: absolute;
+    top: 65px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: none;
+  }
 
-.img-menu {
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
+  .img-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 
-.img-eurocrew {
-  position: absolute;
-  left: 1px;
-  top: 1px;
-  height: 64px;
-}
+  .img-eurocrew {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    height: 64px;
+  }
 
-#toggle-menu:checked ~ .navbar-list {
-  height: calc(100vh - 35%);
-  z-index: 9999;
-  display: flex;
-}
-
+  #toggle-menu:checked ~ .navbar-list {
+    height: calc(100vh - 35%);
+    z-index: 9999;
+    display: flex;
+  }
 
   /* Section 1 - Hero */
   .hero-title {
@@ -608,7 +606,8 @@ button:hover {
   }
 
   .bg-sponsors {
-    width: 480px;
+    /* width: 480px; */
+    width: 100vw;
     height: 200px;
   }
 
@@ -707,7 +706,7 @@ button:hover {
   /* Navbar */
   .navbar-list {
     background: rgb(37, 37, 37);
-    width: 100%;
+    width: 100vw;
     height: calc(100vh - 65%);
     position: absolute;
     top: 65px;
@@ -739,10 +738,13 @@ button:hover {
     display: flex;
   }
 
-
   /* Section hero */
   .hero-title {
     font-size: 25px;
+  }
+
+  .hero-video {
+    width: 100%;
   }
 
   /* Section sponsors */
@@ -760,8 +762,7 @@ button:hover {
   }
 
   .bg-sponsors {
-    max-width: 100%;
-    width: 768px;
+    width: 100vw;
     height: 220px;
   }
 
@@ -891,7 +892,6 @@ button:hover {
     height: 250px;
   }
 
-  
   .sponsors-card-info img {
     width: 250px;
   }
@@ -950,41 +950,41 @@ button:hover {
 }
 
 @media (min-width: 901px) and (max-width: 1200px) {
- /* Navbar */
- .navbar-list {
-  background: rgb(37, 37, 37);
-  width: 100%;
-  height: calc(100vh - 65%);
-  position: absolute;
-  top: 65px;
-  left: 0;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  display: none;
-}
+  /* Navbar */
+  .navbar-list {
+    background: rgb(37, 37, 37);
+    width: 100%;
+    height: calc(100vh - 65%);
+    position: absolute;
+    top: 65px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: none;
+  }
 
-.img-menu {
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
+  .img-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 
-.img-eurocrew {
-  position: absolute;
-  left: 1px;
-  top: 1px;
-  height: 64px;
-}
+  .img-eurocrew {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    height: 64px;
+  }
 
-#toggle-menu:checked ~ .navbar-list {
-  height: calc(100vh - 35%);
-  z-index: 9999;
-  display: flex;
-}
-/* Navbar */
+  #toggle-menu:checked ~ .navbar-list {
+    height: calc(100vh - 35%);
+    z-index: 9999;
+    display: flex;
+  }
+  /* Navbar */
   .navbar-list {
     background: rgb(37, 37, 37);
     width: 100%;
@@ -1075,9 +1075,7 @@ button:hover {
 
 /* Secion de login y signup */
 @media (max-width: 510px) {
-  .login  {
+  .login {
     width: 400px;
   }
-
-
 }
